@@ -324,13 +324,13 @@ html {
 }
 
 .card[for="c1"] {
-    background-image: url('/images/3d_print.jpg');
+    background-image: url('images/3d_print.jpg');
 }
 .card[for="c2"] {
-    background-image: url('/images/image9.jpeg');
+    background-image: url('images/image9.jpeg');
 }
 .card[for="c3"] {
-    background-image: url('/images/IMG_3278.WEBP');
+    background-image: url('images/IMG_3278.WEBP');
 }
   
 
