@@ -3,46 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bite Me - Mobile Dental Lab</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
 </head>
 <body>
     <section class="hero-section">
-        <nav>
-            <div class="logo">
-                <img src="images/just_logo.png" alt="logo">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#">Our Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <header class="header">
+            <img src="images/2-Photoroom (2).png" alt="">
+            <nav class="navbar">
+                <a href="#hero">Home</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
 
         <div class="hero-top">
-            <p>We Are A <span>Mobile Dental Lab Technician </span> Who Will Bring The Work To Your Office To Assist And Assure From Start To Finish</p>
+            <!-- <p>We Are A <span>Mobile Dental Lab Technician Team </span>Who Will Execute 3D Restorative Design From Start To Finish. Service Will Be Delivered Directly To Your Office Location With Team Members On-Site.</p> -->
             <h1>Bite Me</h1>
         </div>
 
         <div class="hero-bottom">
             <h1>Bite Me</h1>
             <div class="hero-bottom-content">
-                <button>Make A Request</button>
-                <h3>3D Printed Dentures And Night Guards</h3>
+                <button>Upload Files Here</button>
+                <h3>3D Printed/Final Dentures And Night Guards</h3>
             </div>
         </div>
 
@@ -53,32 +45,127 @@
         </div>
     </section>
 
-    <section class="services-section">
+    <section class="services-section" id="services">
+        <h1 class="services-title">Our Services</h1>
+        <div class="line"></div>
         <div class="services">
-            <h2>Our Services</h2>
-            <div class="line"></div>
-            <div class="card">
-                <img src="images/night_guard_1.jpg" alt="">
-                <div class="card-content">
-                    <h1>Service 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facilis neque facere tempora temporibus sit, eveniet praesentium dicta repudiandae dolores minus reprehenderit quas et, inventore numquam dolorum eligendi optio totam.</p>
-                </div>
+            <div class="card-container">
+                <input type="radio" name="slide" id="c1" checked>
+                <label for="c1" class="card">
+                    <div class="card-row">
+                        <div class="icon">1</div>
+                        <div class="card-content">
+                            <h4>3D PRINT</h4>
+                            <p>A process used by a computer software design to create a 3D model of a patient's teeth and jaw, which can be used to make dental restorations.</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2" >
+                <label for="c2" class="card">
+                    <div class="card-row">
+                        <div class="icon">2</div>
+                        <div class="card-content">
+                            <h4>NIGHT GUARD</h4>
+                            <p>A custom night guard used to shield and cushion the teeth from excessive wear and helps relieve the natural space between the upper and lower teeth.</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3" >
+                <label for="c3" class="card">
+                    <div class="card-row">
+                        <div class="icon">3</div>
+                        <div class="card-content">
+                            <h4>FINAL MILLED ZIRCONIA</h4>
+                            <p>A strong, durable, and aesthetically pleasing dental prosthetic that is milled from zirconia to last a lifetime.</p>
+                        </div>
+                    </div>
+                </label>
             </div>
-            <div class="card">
-                <img src="images/night_guard_2.jpg" alt="">
-                <div class="card-content">
-                    <h1>Service 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facilis neque facere tempora temporibus sit, eveniet praesentium dicta repudiandae dolores minus reprehenderit quas et, inventore numquam dolorum eligendi optio totam.</p>
-                </div>
+        </div>
+    </section>
+    
+      
+
+    <section class="video-section" id="process-video">
+        <h1 class="video-title">Our Process</h1>
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="videos/IMG_9175.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    
+    <section class="gallery-section" id="gallery">
+        <h1 class="gallery-title">Our Work Gallery</h1>
+        <div class="masonry-layout">
+            <div class="gallery-item">
+                <img src="images/3d_denture.png" alt="Image 1">
             </div>
-            <div class="card">
-                <img src="images/night_guard_1.jpg" alt="">
-                <div class="card-content">
-                    <h1>Service 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facilis neque facere tempora temporibus sit, eveniet praesentium dicta repudiandae dolores minus reprehenderit quas et, inventore numquam dolorum eligendi optio totam.</p>
+            <div class="gallery-item">
+                <img src="images/3d_denture_2.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3d_denture_3.png" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/image6.jpeg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG_3281.JPG" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3d_denture.png" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3d_denture_2.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3d_denture_3.png" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/image6.jpeg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG_3281.JPG" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3d_denture.png" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3d_denture_2.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3d_denture_3.png" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/image6.jpeg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG_3281.JPG" alt="Image 5">
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section" id="comparison">
+        <h1 class="comparison-title">Before Then After</h1>
+        <div class="comparison-container">
+            <div class="comparison-wrapper">
+                <div class="comparison-image before-image">
+                    <img src="images/lady_teeth_before.jpg" alt="Before Teeth">
+                </div>
+                <div class="comparison-image after-image">
+                    <img src="images/lady_teeth_after.jpg" alt="After Teeth">
+                </div>
+                <div class="slider">
+                    <div class="slider-handle"></div>
                 </div>
             </div>
         </div>
     </section>
+    
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
