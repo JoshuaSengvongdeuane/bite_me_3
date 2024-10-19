@@ -46,4 +46,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+ // Select the label and the text to change
+ const labelOne = document.getElementById('card1');
+ const labelTwo = document.getElementById('card2');
+ const labelThree = document.getElementById('card3');
+ const textToChange = document.getElementById('serviceText');
 
+ // Add a click event listener to the label
+ labelOne.addEventListener('click', function() {
+     textToChange.textContent = "A process used by a computer software design to create a 3D model of a patient's teeth and jaw, which can be used to make dental restorations.";
+ });
+
+ labelTwo.addEventListener('click', function() {
+     textToChange.textContent = "A custom night guard used to shield and cushion the teeth from excessive wear and helps relieve the natural space between the upper and lower teeth.";
+ });
+
+ labelThree.addEventListener('click', function() {
+     textToChange.textContent = "A strong, durable, and aesthetically pleasing dental prosthetic that is milled from zirconia to last a lifetime.";
+ });
