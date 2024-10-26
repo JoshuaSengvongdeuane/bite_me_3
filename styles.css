@@ -50,14 +50,14 @@ html {
     width: 0;
     height: 2px;
     display: block;
-    background: #FFBF00;
+    background: #21e4a6;
     transition: width 0.3s ease; 
     bottom: -5px;
     left: 0;
 }
 
 .navbar a:hover {
-    color: #FFBF00; 
+    color: #21e4a6; 
 }
 
 .navbar a:hover::after {
@@ -169,7 +169,7 @@ html {
 }
 
 .hero-bottom button:hover {
-    background-color: #FFBF00;
+    background-color: #21e4a6;
     border: 1px solid black;
     color: #215ee4;
 }
@@ -336,16 +336,17 @@ html {
     transform: translateY(0) !important;
 }
 
-.card[for="c1"] {
+.card[id="card1"] {
     background-image: url('images/3d_print.jpg');
 }
-.card[for="c2"] {
+.card[id="card2"] {
     background-image: url('images/image9.jpeg');
 }
-.card[for="c3"] {
+.card[id="card3"] {
     background-image: url('images/IMG_3278.WEBP');
 }
   
+
 
 /* Video Section */
 .video-section {
