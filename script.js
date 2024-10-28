@@ -54,13 +54,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
  // Add a click event listener to the label
  labelOne.addEventListener('click', function() {
-     textToChange.textContent = "A process used by a computer software design to create a 3D model of a patient's teeth and jaw, which can be used to make dental restorations.";
+     textToChange.textContent = "PMMA denture is a temporary denture choice that is cost-effective, biocompatible, easy to process and can eb repaired or replaced frequently as needed.";
  });
 
  labelTwo.addEventListener('click', function() {
-     textToChange.textContent = "A custom night guard used to shield and cushion the teeth from excessive wear and helps relieve the natural space between the upper and lower teeth.";
+     textToChange.textContent = "Customize night guard is a design to protect the teeth and jaw from clinching and grinding. We take an impression of your teeth, then moulded over the model using a special material.";
  });
 
  labelThree.addEventListener('click', function() {
-     textToChange.textContent = "A strong, durable, and aesthetically pleasing dental prosthetic that is milled from zirconia to last a lifetime.";
+     textToChange.textContent = "Zirconia arch is a fixed dental prosthesis designed to replace the entire upper or lower arch of missing teeth. It is more durable, long-lasting, and natural look and feel.";
  });
+
+
+document.getElementById('file').addEventListener('change', function() {
+    const fileNamesContainer = document.getElementById('file-names');
+    fileNamesContainer.innerHTML = ""; // Clear previous file names
+    const files = this.files;
+    for (let i = 0; i < files.length; i++) {
+      const fileName = document.createElement('p');
+      fileName.textContent = files[i].name;
+      fileNamesContainer.appendChild(fileName);
+    }
+});
