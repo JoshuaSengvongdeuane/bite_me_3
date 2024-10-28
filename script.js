@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
  // Add a click event listener to the label
  labelOne.addEventListener('click', function() {
-     textToChange.textContent = "PMMA denture is a temporary denture choice that is cost-effective, biocompatible, easy to process and can eb repaired or replaced frequently as needed.";
+     textToChange.textContent = "PMMA denture is a temporary denture choice that is cost-effective, biocompatible, easy to process and can be repaired or replaced frequently as needed.";
  });
 
  labelTwo.addEventListener('click', function() {
@@ -76,3 +76,8 @@ document.getElementById('file').addEventListener('change', function() {
       fileNamesContainer.appendChild(fileName);
     }
 });
+
+function scrollToContact() {
+    const contactSection = document.getElementById('contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+}
