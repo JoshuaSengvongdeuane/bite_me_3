@@ -1,0 +1,314 @@
+/* Styles for laptops (max-width: 1280px) */
+@media (max-width: 1280px) {
+    /*Hero Section*/
+    .header {
+        padding: 15px 5%; /* Adjust padding */
+    }
+
+    .navbar a {
+        font-size: 18px; /* Slightly smaller font size */
+        margin-left: 20px; /* Reduce space between links */
+    }
+
+    .hero-top h1 {
+        font-size: 15vw; /* Adjust font size */
+        bottom: -20%;
+        left: 50%;
+    }
+
+    .hero-bottom h1 {
+        font-size: 15vw; /* Adjust font size */
+        text-align: center;
+        bottom: 80%;
+        left: 50%;
+    }
+
+    .hero-bottom-content {
+        padding: 100px 20px; /* Adjust padding for better layout */
+        flex-direction: column; /* Stack items vertically on smaller laptops */
+        align-items: center; /* Center align content */
+    }
+
+    .hero-bottom button {
+        margin-left: -60%;
+        width: 13%; /* Make button full width */
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .hero-bottom h3 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .hero-img .main-img {
+        width: 30%;
+        height: auto;
+    }
+
+    .hero-img .denture-2,
+    .hero-img .denture-3 {
+        width: 10%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .hero-bottom-content h3 {
+        margin-left: 60%;
+    }
+
+    /*Service Section*/
+    .services-section {
+        height: 100vh;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .card-container {
+        height: auto;
+        margin-top: 20%;
+    }
+
+    .card {
+        width: 100px;
+        height: 350px;
+        margin: 10px;
+    }
+
+    .describe-service {
+        margin-top: 5%;
+    }
+
+    /*Video/Process Section*/
+
+
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+    /* Styles for tablets in portrait */
+
+    /*hero Section*/
+    .hero-top h1 {
+        font-size: 15vw; /* Adjust font size */
+        bottom: -15%;
+        left: 50%;
+    }
+
+    .hero-bottom h1 {
+        font-size: 15vw; /* Adjust font size */
+        text-align: center;
+        bottom: 85%;
+        left: 50%;
+    }
+
+    .main-img {
+        width: 80%; /* Scale the main image */
+        top: 60%; /* Adjust position */
+    }
+
+    .denture-2, 
+    .denture-3 {
+        top: 30%;
+    }
+
+    .hero-bottom-content button {
+        width: 20%;
+    }
+
+    /*Services Section*/
+    .services-section {
+        height: 80vh;
+    }
+    .services {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        height: auto; /* Allow height to adjust */
+        padding: 20px; /* Add padding for better appearance */
+    }
+
+    .services-title {
+        font-size: 24px; /* Smaller title font size */
+    }
+
+    .line {
+        width: 100px; /* Adjust line width for mobile */
+    }
+
+    .card-container {
+        height: auto; /* Allow card container height to adjust */
+        flex-wrap: wrap; /* Allow cards to wrap to the next line */
+        justify-content: center; /* Center cards */
+        margin: 0; /* Remove margin */
+    }
+
+    .card {
+        width: 70px; /* Smaller width for mobile */
+        height: 250px; /* Smaller height for mobile */
+        margin: 5px; /* Reduce margin */
+    }
+
+    .describe-service {
+        font-size: 20px; /* Smaller description font size */
+        margin-left: 5%; /* Adjust margins */
+        margin-right: 5%;
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .card > .card-row > .icon {
+        width: 50px; /* Smaller icon size */
+        margin: 10px; /* Adjust icon margin */
+    }
+
+    .card > .card-content {
+        width: 100%; /* Adjust content width */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .services-section input:checked + label {
+        width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 5%;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items horizontally */
+    }
+
+    .header img {
+        margin-bottom: 10px; /* Add spacing between logo and navbar */
+    }
+
+    .navbar {
+        display: flex; /* Ensure navbar is a flex container */
+        flex-direction: row; /* Keep items in a row */
+        justify-content: center; /* Center align navbar items */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+    }
+
+    .navbar a {
+        margin-left: 10px; /* Reduce margin for smaller screens */
+        margin-right: 10px; /* Reduce margin for smaller screens */
+        font-size: 16px; /* Smaller font size for links */
+    }
+
+    .hero-top h1 {
+        font-size: 20vw; /* Adjust font size for smaller screens */
+        bottom: -12%; /* Adjust position */
+    }
+
+    .hero-bottom h1 {
+        font-size: 20vw; /* Adjust font size for smaller screens */
+        bottom: 88%; /* Adjust position */
+    }
+
+    .hero-bottom-content {
+        flex-direction: column; /* Stack button and text vertically */
+        padding: 50px 20px; /* Adjust padding */
+        align-items: center; /* Center align items */
+    }
+
+    .hero-bottom button {
+        font-size: 17px;
+        width: 30%; /* Make button width responsive */
+        margin: 10px 0; /* Add margin between button and text */
+        margin-top: 10%;
+    }
+
+    .hero-bottom-content h3 {
+        margin-right: 50%;
+        font-size: 20px;
+    }
+
+    .main-img {
+        width: 80%; /* Scale the main image */
+        top: 55%; /* Adjust position */
+    }
+
+    .denture-2, .denture-3 {
+        top: 25%;
+    }
+
+    /*Services Section*/
+    .services-section {
+        height: 100vh;
+    }
+    .services {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        height: auto; /* Allow height to adjust */
+        padding: 20px; /* Add padding for better appearance */
+    }
+
+    .services-title {
+        font-size: 24px; /* Smaller title font size */
+    }
+
+    .line {
+        width: 100px; /* Adjust line width for mobile */
+    }
+
+    .card-container {
+        height: auto; /* Allow card container height to adjust */
+        flex-wrap: wrap; /* Allow cards to wrap to the next line */
+        justify-content: center; /* Center cards */
+        margin: 0; /* Remove margin */
+    }
+
+    .card {
+        width: 100px; /* Smaller width for mobile */
+        height: 200px; /* Smaller height for mobile */
+        margin: 5px; /* Reduce margin */
+    }
+
+    .describe-service {
+        font-size: 18px; /* Smaller description font size */
+        margin-left: 5%; /* Adjust margins */
+        margin-right: 5%;
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .card > .card-row > .icon {
+        width: 50px; /* Smaller icon size */
+        margin: 10px; /* Adjust icon margin */
+    }
+
+    .card > .card-content {
+        width: 100%; /* Adjust content width */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .services-section input:checked + label {
+        width: 300px;
+    }
+
+    /*Video/Process Section*/
+    .video-container {
+        max-width: 50%;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /*Gallery Section*/
+    .masonry-layout {
+        column-count: 3; 
+        column-gap: 5px; 
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+
+/* Additional media queries for smaller screens can follow */
