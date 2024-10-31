@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bite Me - Mobile Dental Lab</title>
+    <title>Bite Me Dental Lab</title>
+    <link rel="icon" href="images/2-Photoroom (2).png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,102 +12,140 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("Nkx6MzWgZWZAS9eay");
+    })();
+    </script>
 </head>
 <body>
-    <section class="hero-section">
-        <header class="header">
+    
+    <header>
+        <div class="logo">
             <img src="images/2-Photoroom (2).png" alt="">
-            <nav class="navbar">
-                <a href="#hero">Home</a>
-                <a href="#services">Services</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-
-
-        <div class="hero-top">
-            <h1>Bite Me</h1>
+            Bite Me
         </div>
+        <input type="checkbox" id="nav_check" hidden>
 
-        <div class="hero-bottom">
-            <h1>Bite Me</h1>
-            <div class="hero-bottom-content">
-                <button onclick="scrollToContact()">Upload Files Here</button>
-                <h3>3D Printed/Final Dentures And Night Guards</h3>
+        <nav>
+            <div class="logo">
+                <img src="images/2-Photoroom (2).png" alt="">
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="company-info">
+                <h1>Welcome to <span>Bite Me!</span></h1>
+                <p>Your one-stop solution for 3D printed dentures.</p>
+                <button onclick="scrollToContact()">Get Started</button>
+                <a href="https://www.instagram.com/bitemedentallab/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="hero-company-name scrolling-text-container">
+                <div class="scrolling-text-inner" style="--marquee-speed: 24s; --direction:scroll-left" role="marquee">
+                    <div class="scrolling-text">
+                        <div class="scrolling-text-item">Quality.</div>
+                        <div class="scrolling-text-item">Comfort.</div>
+                        <div class="scrolling-text-item">Durable.</div>
+                        <div class="scrolling-text-item">Natural.</div>
+                        <div class="scrolling-text-item">Stylish.</div>
+                        <!-- Add More Items Here -->
+                    </div>
+                    <div class="scrolling-text">
+                        <div class="scrolling-text-item">Quality.</div>
+                        <div class="scrolling-text-item">Comfort.</div>
+                        <div class="scrolling-text-item">Durable.</div>
+                        <div class="scrolling-text-item">Natural.</div>
+                        <div class="scrolling-text-item">Stylish.</div>
+                    </div>
+                    <div class="scrolling-text">
+                        <div class="scrolling-text-item">Quality.</div>
+                        <div class="scrolling-text-item">Comfort.</div>
+                        <div class="scrolling-text-item">Durable.</div>
+                        <div class="scrolling-text-item">Natural.</div>
+                        <div class="scrolling-text-item">Stylish.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="animated-text">
+                <div class="hero-img">
+                    <img src="images/3d_denture.png" alt="3d_denture" class="main-img">
+                </div>
             </div>
         </div>
-
-        <div class="hero-img">
-            <img src="images/3d_denture.png" alt="3d_denture" class="main-img">
-            <img src="images/denture_2.png" alt="denture-2" class="denture-2">
-            <img src="images/3d_denture_3.png" alt="denture-3" class="denture-3">
-        </div>
     </section>
 
-    <section class="services-section" id="services">
-        <h1 class="services-title">Our Services</h1>
-        <div class="line"></div>
-        <div class="services">
-            <div class="card-container">
-                <input type="radio" name="slide" id="c1" checked>
-                <label for="c1" class="card" id="card1">
-                    <div class="card-row">
-                        <div class="icon">1</div>
-                        <div class="card-content">
-                            <h4>3D PRINT</h4>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c2" >
-                <label for="c2" class="card" id="card2">
-                    <div class="card-row">
-                        <div class="icon">2</div>
-                        <div class="card-content">
-                            <h4>NIGHT GUARD</h4>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c3" >
-                <label for="c3" class="card" id="card3">
-                    <div class="card-row">
-                        <div class="icon">3</div>
-                        <div class="card-content">
-                            <h4>FINAL MILLED ZIRCONIA</h4>
-                        </div>
-                    </div>
-                </label>
+    <div class="divider">
+        <i class="fas fa-tooth"></i> 
+    </div>
+
+    <section class="services" id="services">
+        <h1 class="services-title">
+            Our Services
+        </h1>
+        <div class="services-container">
+            <div class="service">
+                <i class="fa fa-cubes"></i>
+                <h2 class="service-small-title">3D Prints</h2>
+                <p>PMMA denture is a temporary denture choice that is cost-effective, biocompatible, easy to process and can be repaired or replaced frequently as needed.</p>
             </div>
-            <h1 class="describe-service" id="serviceText">PMMA denture is a temporary denture choice that is cost-effective, biocompatible, easy to process and can be repaired or replaced frequently as needed.</h1>
-            <div class="blob"></div>
-        </div>
-
-    </section>
-    
-      
-
-    <section class="video-section" id="process-video">
-        <h1 class="video-title">Our Process</h1>
-        <div class="video-container">
-            <video autoplay muted loop playsinline>
-                <source src="videos/IMG_9175.MOV" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="service">
+                <i class="fa-solid fa-teeth"></i>
+                <h2 class="service-small-title">Dentures</h2>
+                <p>Customize night guard is a design to protect the teeth and jaw from clinching and grinding. We take an impression of your teeth, then moulded over the model using a special material.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-crown"></i>
+                <h2 class="service-small-title">Final Mill Zirconia</h2>
+                <p>Zirconia arch is a fixed dental prosthesis designed to replace the entire upper or lower arch of missing teeth. It is more durable, long-lasting, and natural look and feel.</p>
+            </div>
         </div>
     </section>
-    
+
+    <div class="divider">
+        <i class="fas fa-tooth"></i> 
+    </div>
+
     <section class="gallery-section" id="gallery">
         <h1 class="gallery-title">Gallery</h1>
         <div class="masonry-layout">
-            <div class="gallery-item">
+            <!-- <div class="gallery-item">
                 <img src="images/3d_denture.png" alt="Image 1">
-            </div>
+            </div> -->
             <div class="gallery-item">
                 <img src="images/3d_denture_2.jpg" alt="Image 2">
             </div>
-            <div class="gallery-item">
+            <!-- <div class="gallery-item">
                 <img src="images/3d_denture_3.png" alt="Image 3">
-            </div>
+            </div> -->
             <div class="gallery-item">
                 <img src="images/image6.jpeg" alt="Image 4">
             </div>
@@ -114,29 +153,59 @@
                 <img src="images/IMG_3281.JPG" alt="Image 5">
             </div>
             <div class="gallery-item">
-                <img src="images/software_img1.jpg" alt="Image 5">
+                <img src="images/software_img1.jpg" alt="Image 7">
             </div>
             <div class="gallery-item">
-                <img src="images/software_img2.jpg" alt="Image 5">
+                <img src="images/software_img2.jpg" alt="Image 8">
             </div>
             <div class="gallery-item">
-                <img src="images/inputted_3d_teeth.jpg" alt="Image 5">
+                <img src="images/inputted_3d_teeth.jpg" alt="Image 9">
             </div>
             <div class="gallery-item">
-                <img src="images/blackbg_3d_teeth.jpg" alt="Image 5">
+                <img src="images/blackbg_3d_teeth.jpg" alt="Image 10">
+            </div>
+            <div class="gallery-item">
+                <img src="images/software_img3.jpg" alt="Image 11">
+            </div>
+            <div class="gallery-item">
+                <img src="images/software_img4.jpg" alt="Image 12">
+            </div>
+            <div class="gallery-item">
+                <img src="images/software_img5.jpg" alt="Image 13">
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG_3278.WEBP" alt="Image 14">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3d_print.jpg" alt="Image 15">
             </div>
         </div>
     </section>
 
+    <div class="divider">
+        <i class="fas fa-tooth"></i> 
+    </div>
+
     <section class="comparison-section" id="comparison">
         <h1 class="comparison-title">Before Then After</h1>
         <div class="comparison-container">
-            <div class="comparison-wrapper">
+            <div class="comparison-wrapper" data-comparison="1">
                 <div class="comparison-image before-image">
-                    <img src="images/lady_teeth_before.jpg" alt="Before Teeth">
+                    <img src="images/blonde_lady_before.jpg" alt="Before Teeth">
                 </div>
                 <div class="comparison-image after-image">
-                    <img src="images/lady_teeth_after.jpg" alt="After Teeth">
+                    <img src="images/blonde_lady_after.jpg" alt="After Teeth">
+                </div>
+                <div class="slider">
+                    <div class="slider-handle"></div>
+                </div>
+            </div>
+            <div class="comparison-wrapper" data-comparison="2">
+                <div class="comparison-image before-image">
+                    <img src="images/lady_teeth_before.jpg" alt="Before Treatment">
+                </div>
+                <div class="comparison-image after-image">
+                    <img src="images/lady_teeth_after.jpg" alt="After Treatment">
                 </div>
                 <div class="slider">
                     <div class="slider-handle"></div>
@@ -144,7 +213,11 @@
             </div>
         </div>
     </section>
-    
+
+    <div class="divider">
+        <i class="fas fa-tooth"></i> 
+    </div>
+
     <section class="contact" id="contact">
         <div class="contact_us_2">
             <div class="responsive-container-block big-container">
@@ -163,41 +236,37 @@
                         <p class="text-blk input-title">
                           FIRST NAME
                         </p>
-                        <input class="input" id="ijowk" name="FirstName" placeholder="Please enter first name...">
+                        <input class="input" id="first_name" name="FirstName" placeholder="Please enter first name...">
                       </div>
                       <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                         <p class="text-blk input-title">
                           LAST NAME
                         </p>
-                        <input class="input" id="indfi" name="Last Name" placeholder="Please enter last name...">
+                        <input class="input" id="last_name" name="Last Name" placeholder="Please enter last name...">
                       </div>
                       <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                         <p class="text-blk input-title">
                           EMAIL
                         </p>
-                        <input class="input" id="ipmgh" name="Email" placeholder="Please enter email...">
+                        <input class="input" id="email_id" name="Email" placeholder="Please enter email...">
                       </div>
                       <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                         <p class="text-blk input-title">
                           PHONE NUMBER
                         </p>
-                        <input class="input" id="imgis" name="PhoneNumber" placeholder="Please enter phone number...">
+                        <input class="input" id="phone_number" name="PhoneNumber" placeholder="Please enter phone number...">
                       </div>
                       <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i">
                         <p class="text-blk input-title">
                           MESSAGE
                         </p>
-                        <textarea class="textinput" id="i5vyy" placeholder="Please enter query..."></textarea>
+                        <textarea class="textinput" id="message" placeholder="Please enter message..."></textarea>
                       </div>
-                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="file-upload">
-                        <p class="text-blk input-title">
-                          ATTACH FILE
-                        </p>
-                        <input class="input" type="file" id="file" name="attachment" accept=".stl, .png, .jpg, .jpeg, .txt, .pdf" multiple>
-                        <div id="file-names" class="file-names"></div>
+                      <div class="request-note">
+                        <h4>Please email any files to our email: bitemedentallab@gmail.com</h4>
                       </div>
                     </div>
-                    <button class="submit-btn">
+                    <button class="submit-btn" onclick="SendMail()">
                       Submit
                     </button>
                   </div>
@@ -207,8 +276,15 @@
           </div>
     </section>
 
-    <footer>Copyright 2024. Bite Me Dental Lab, LLC. All Rights Reserved.</footer>
+    <footer>
+        <div class="bottom-logo">
+            <img src="images/2-Photoroom (2).png" alt="" class="footer-logo">
+            <h3>Bite Me</h3>
+        </div>
+        <p>Copyright 2024. Bite Me Dental Lab, LLC. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
