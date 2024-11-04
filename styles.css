@@ -158,6 +158,7 @@ nav ul li a.active {
     flex: 1;
     padding-right: 15px;
     transform: translateX(-150px); /* Adjust value as needed */
+    z-index: 100;
 }
 
 .company-info h1 {
