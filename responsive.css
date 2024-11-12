@@ -37,6 +37,13 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .company-info {
+        font-size: 3vw;
+        padding: 0 10px;
+    }
+}
+
 /* Media query for smaller laptops and larger tablets */
 @media (max-width: 992px) {
     .services-container {
