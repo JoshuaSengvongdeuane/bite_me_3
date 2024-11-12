@@ -912,16 +912,20 @@ footer {
     margin: 1rem;
 }
 
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .footer-logo {
     width: 10%;
 }
 
 .bottom-logo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: #133E87;
-    margin-left: -200px;
 }
 
 .bottom-logo img {

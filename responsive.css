@@ -159,7 +159,5 @@
         height: 300px;
         transform: translateX(2%);
     }
-    footer .bottom-logo {
-        transform: translateX(20%);
-    }
+    
 }
