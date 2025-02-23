@@ -141,9 +141,10 @@ nav ul li a.active {
 .hero-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 50px 20px;
     height: 700px; /* Adjust height as needed */
+    overflow: hidden;
 }
 
 .hero-content {
@@ -156,8 +157,7 @@ nav ul li a.active {
 .company-info {
     font-family: 'Courier New', Courier, monospace;
     flex: 1;
-    padding-right: 15px;
-    transform: translateX(-150px); /* Adjust value as needed */
+    transform: translateX(0); /* Adjust value as needed */
     z-index: 100;
 }
 
